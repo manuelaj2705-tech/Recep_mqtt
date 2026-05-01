@@ -5,7 +5,6 @@ import time
 
 st.set_page_config(
     page_title="Sensor en Vivo",
-    page_icon="🌿",
     layout="centered"
 )
 
@@ -258,7 +257,7 @@ def get_mqtt_message(broker, port, topic, client_id):
         return {"error": str(e)}
 
 with st.sidebar:
-    st.markdown('<div class="sidebar-brand">🌿 Sensor Monitor</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sidebar-brand"> Sensor Monitor</div>', unsafe_allow_html=True)
     st.markdown('<div class="sidebar-tip">Configura tu conexión MQTT</div>', unsafe_allow_html=True)
     broker    = st.text_input('Broker', value='broker.mqttdashboard.com')
     port      = st.number_input('Puerto', value=1883, min_value=1, max_value=65535)
