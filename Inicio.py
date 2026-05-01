@@ -338,5 +338,4 @@ if st.session_state.sensor_data:
             with st.expander("Ver datos en formato JSON"):
                 st.json(data)
         else:
-            st.code(data, language=None)wn(f'<div class="timestamp">// TIMESTAMP: {st.session_state.last_update}</div>',
-                    unsafe_allow_html=True)
+            st.code(data, language=None)
