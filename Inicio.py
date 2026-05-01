@@ -268,7 +268,6 @@ with st.sidebar:
     for b in ['broker.mqttdashboard.com', 'test.mosquitto.org', 'broker.hivemq.com']:
         st.markdown(f'<div class="sidebar-broker-pill">› {b}</div>', unsafe_allow_html=True)
 
-st.markdown('<div class="hero-badge">📡 Tiempo real</div>', unsafe_allow_html=True)
 st.markdown('<div class="hero-title">Monitor de Sensor</div>', unsafe_allow_html=True)
 st.markdown('<div class="hero-sub">Lee y visualiza datos de cualquier sensor MQTT al instante.</div>', unsafe_allow_html=True)
 
